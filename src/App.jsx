@@ -4,8 +4,9 @@ import {
   IconBrandTwitter,
 } from "@tabler/icons";
 import clsx from "clsx";
+import Button from "./components/Button";
 
-export default function App() {
+function App() {
   const type = "submit";
   const onClick = () => console.log("login with another style");
   return (
@@ -40,19 +41,4 @@ export default function App() {
   );
 }
 
-function Button(props) {
-  // pada clasname dibautkan default parameter untuk mengisi warna, dan mengisi default type
-  const { className = "bg-blue-600", children, text, type = "submit" } = props;
-  return (
-    <button
-      {...props}
-      type={type}
-      className={clsx(
-        className,
-        "[&>svg]:w-5 [&>svg]:h-5 [&>svg]:stroke-1   flex items-center gap-x-2 text-white px-4 py-2 rounded"
-      )}
-    >
-      {text || children}
-    </button>
-  );
-}
+export default App;
