@@ -10,10 +10,13 @@ export default function Counter({ initialValue }) {
   return (
     <div>
       <div className={"text-5xl font-bold"}>{count}</div>
-      <Button className={"mt-5 flex items-center gap-2"} onClick={handleClick}>
+      <Button
+        className={"bg-red-600 mt-5 flex items-center gap-2"}
+        onClick={handleClick}
+      >
         +1
       </Button>
-
+      <br></br>
       <Button
         onClick={() => {
           handleClick();
