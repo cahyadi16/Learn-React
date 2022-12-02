@@ -1,7 +1,7 @@
 function Card({ children }) {
   return (
     <div>
-      <div className={"shadow rounded-lg overflow-hidden bg-white"}>
+      <div className={"text-black shadow rounded-lg overflow-hidden bg-white"}>
         {children}
       </div>
     </div>
